@@ -1,6 +1,6 @@
 {
     "name": "faster-file-rotator",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Fast automated stream rotation useful for log files",
     "main": "FileStreamRotator.js",
     "scripts": {
