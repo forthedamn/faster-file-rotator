@@ -1,10 +1,18 @@
 
-file-stream-rotator
+faster-file-rotator
 ===================
 
 NodeJS file stream rotator
 
-## Purpose
+> Fork from [file-stream-rotator](https://github.com/rogerc/file-stream-rotator),but much faster
+
+## Why rewrite？
+
+Looks like file-stream-rotator no one maintained.
+
+> File-stream-rotator generate audit.json file to rotate file，but audit.json will become pretty large because of adding one log stamp in every new stream. As audit.json is actually an array used in filter, and this array's length may be 800 thousand, it will seriously affect server performance.
+
+## Purpose 
 
 To provide an automated rotation of Express/Connect logs or anything else that writes to a log on a regular basis that needs to be rotated based on date. It can also be rotated based on a size limit and remove old log files based on count or elapsed days. 
 
@@ -108,13 +116,3 @@ You can also limit the size of each file by adding the size option using "k", "m
         // do something with old file like compression or delete older than X days.
     })
 ```
-
-## NPM Maintainers
-
-The npm module for this library will be maintained by:
-
-* [Roger C](http://github.com/rogerc)
-
-## License
-
-file-stream-rotator is licensed under the MIT license.
