@@ -1,14 +1,14 @@
 {
-    "name": "file-stream-rotator",
-    "version": "0.2.1",
-    "description": "Automated stream rotation useful for log files",
+    "name": "faster-file-rotator",
+    "version": "1.0.0",
+    "description": "Fast automated stream rotation useful for log files",
     "main": "FileStreamRotator.js",
     "scripts": {
         "test": "node test.js"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/rogerc/file-stream-rotator.git"
+        "url": "git://github.com:forthedamn/faster-file-rotator.git"
     },
     "keywords": [
         "stream",
@@ -22,7 +22,7 @@
         "daily",
         "logrotate"
     ],
-    "author": "Roger Castells",
+    "author": "Forthedamn",
     "license": "MIT",
     "dependencies": {
         "moment": "^2.11.2"
